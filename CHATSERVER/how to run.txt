@@ -1,0 +1,12 @@
+If client and server are on the same machine.
+
+1. Start server by executing ChatServer.
+2. Start as many clients as you want by executing ClientLogin in separate instance of JRE.
+
+If client and server are on different machines.
+1. Start server by executing ChatServer.
+2. Replace localhost by the name of the machine  in the following line in ClientThread.java.
+ s=new Socket("localhost",2500);
+3. Recompile ClientThread.java.
+4. Copy it to each client machine.
+5. Execute the client by executing CientLogin.class at each client machine.
